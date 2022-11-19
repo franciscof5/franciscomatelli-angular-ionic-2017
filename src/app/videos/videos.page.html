@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-segment>
+      <ion-back-button defaultHref="posts"></ion-back-button>
+      <!--ion-title [routerLink]="['/']">  Home</ion-title>
+      <! --ion-buttons slot="start" DDDngIf="categoryTitle">
+        
+      </ion-buttons-->
+    </ion-segment>
+    <ion-segment [(ngModel)]="rede">
+      <ion-segment-button value="youtube">
+          <ion-icon name="logo-youtube" color="danger"></ion-icon> YouTube
+      </ion-segment-button>
+      <ion-segment-button value="instagram">
+          <ion-icon name="logo-instagram" color="warning"></ion-icon> Instagram
+      </ion-segment-button>
+      <ion-segment-button value="tiktok">
+          <ion-icon name="tablet-portrait" color="success"></ion-icon> TikTok
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="rede">
+    <ion-list *ngSwitchCase="'youtube'">
+      <ion-item>
+        <!--ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-1.jpg">
+        </ion-thumbnail-->
+        <a href="#">
+          <h2>Vamos Longe</h2>
+          <p>Expedição Brasil-Uruguai: 2 anos na estrada de moto, sem roteiro. SP, RJ, ES, MG, PI, BA, TO, DF, GO, MS, PR, SC, RS, Uruguai.</p>
+        </a>
+      </ion-item>
+      <ion-item>
+        <a href="#">
+          <h2>F5 Sites</h2>
+          <p>A agência é uma série de vídeos retratando a atuação da f5sites.com em formato de vlog</p>
+        </a>
+      </ion-item>
+      <ion-item>
+        <a href="#">
+          <h2>Arca da Risada</h2>
+          <p></p>
+        </a>
+      </ion-item>
+      <ion-item>
+        <h2>Músicas Autorais</h2>
+      </ion-item>
+      <ion-item>
+        <h2>Estudos de Negócios</h2>
+      </ion-item>
+      <ion-item>
+        <h2>CursoWP</h2>
+      </ion-item>
+      <ion-item>
+        <h2>Treinamento em Foco</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'instagram'">
+      <ion-item>
+        <h2>@franciscomatelli</h2>
+      </ion-item>
+      <ion-item>
+        <h2>@vamoslonge</h2>
+      </ion-item>
+      <ion-item>
+        <h2>@f5sites</h2>
+      </ion-item>
+      <ion-item>
+        <h2>@coworkinghostel</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'tiktok'">
+      <ion-item>
+        <h2>@VamosLonge</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

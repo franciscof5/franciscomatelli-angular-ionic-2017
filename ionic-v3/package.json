@@ -1,8 +1,8 @@
 {
-    "name": "ionic-wordpress-example",
-    "version": "0.0.1",
-    "author": "IonicThemes",
-    "homepage": "https://ionicthemes.com/",
+    "name": "ionic.franciscomatelli.com.br",
+    "version": "1.0.0",
+    "author": "Francisco Matelli",
+    "homepage": "https://www.franciscomatelli.com.br/",
     "private": true,
     "scripts": {
         "clean": "ionic-app-scripts clean",

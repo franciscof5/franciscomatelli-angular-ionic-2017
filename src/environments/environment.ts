@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   wordpress: {
-    api_url: 'https://wordpress.startapplabs.com/blog/wp-json/wp/v2/',
-    auth_url: 'https://wordpress.startapplabs.com/blog/wp-json/jwt-auth/v1/token'
+    api_url: 'https://conteudo.franciscomatelli.com.br/wp-json/wp/v2/',
+    auth_url: 'https://conteudo.franciscomatelli.com.br/wp-json/jwt-auth/v1/token'
   }
 };
 
